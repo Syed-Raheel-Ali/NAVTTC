@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Anta&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>welcone page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="body">
+    <div class="portion">
+        <div class="welcome">
+            <ul>welcome to your MyPay wallet</ul>
+            <ul>hope you enjoy our services</ul>
+        </div>
+        <div class="contact">
+            <fieldset>
+                <legend>Contact Us</legend>
+                <form action="contact_after.html">
+                    <ul>For partnership opportunities, queries or suggestions, please leave a message below:</ul>
+                    <div class="contact-item">
+                        <label class="control-label" for="contactform-name">NAME</label>
+                        <input type="text" id="contactform-name" class="form-control" name="ContactForm[name]"
+                            autofocus="" aria-required="true" aria-invalid="true">
+                        <p class="help-block help-block-error">Name is required.</p>
+                    </div>
+                    <div class="contact-item">
+                        <label class="control-label" for="contactform-organization">ORGANIZATION</label>
+                        <input type="text" id="contactform-organization" class="form-control"
+                            name="ContactForm[organization]">
+                        <p class="help-block help-block-error"></p>
+                    </div>
+                    <div class="contact-item">
+                        <label class="control-label" for="contactform-email">EMAIL ADDRESS</label>
+                        <input type="text" id="contactform-email" class="form-control" name="ContactForm[email]"
+                            aria-required="true" aria-invalid="true">
+                        <p class="help-block help-block-error">Email address is required.</p>
+                    </div>
+                    <div class="contact-item">
+                        <label class="control-label" for="contactform-body">MESSAGE</label>
+                        <textarea id="contactform-body" class="form-control textarea" name="ContactForm[body]" rows="4"
+                            aria-required="true" aria-invalid="true"></textarea>
+                        <p class="help-block help-block-error">Message text is required.</p>
+                    </div>
+                    <div class="contact-item">
+                        <label class="control-label" for="contactform-verifycode">VERIFICATION CODE</label>
+                        <div class="row">
+                            <div class="col-md-6"><img id="contactform-verifycode-image"
+                                    src="/site/captcha?v=65f6a86f2ce140.88338925" alt=""></div>
+                            <div class="col-md-6"><input type="text" id="contactform-verifycode" class="form-control"
+                                    name="ContactForm[verifyCode]"></div>
+                        </div>
+                        <p class="help-block help-block-error"></p>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn solid" name="contact-button" style="width:100%">SEND</button>
+                    </div>
+                </form>
+            </fieldset>
+        </div>
+    </div>
+</body>
+
+</html>

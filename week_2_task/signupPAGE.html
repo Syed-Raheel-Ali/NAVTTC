@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Anta&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>signUPForm</title>
+</head>
+
+<body>
+    <div class="sec1">
+
+        <div class="text">
+            <ul>MY PAY</ul>
+            <ul>Welcome to MyPay wallet</ul>
+            <ul>One wallet for all your everyday payments.</ul>
+        </div>
+
+        <div class="img"><img src="Assets/MY PAY.png" alt=""></div>
+
+
+    </div>
+    <div class="sec2">
+        <select name="language" id="language">
+            <option value="english_US">English (US)</option>
+            <option value="spanish">spanish</option>
+            <option value="urdu">Urdu</option>
+            <option value="germany">germany</option>
+            <option selected value="english_UK">English (UK)</option>
+        </select>
+        <div class="create">
+            <div class="hero">
+                <form action="after.html" id="registrationForm" onsubmit="return validateForm()">
+                    <ul>Create Account</ul>
+                    <ul>
+                        <input type="text" placeholder="Full Name" required>
+                    </ul>
+                    <ul>
+                        <input type="email" placeholder="Email" required>
+                    </ul>
+                    <ul>
+                        <input id="password" type="password" placeholder="Password" required>
+                    </ul>
+                    <ul>
+                        <input id="confirmPassword" type="password" placeholder="Confirm Password" required>
+                    </ul>
+                    <ul>
+                        <input type="checkbox" required>
+                        <div class="hello">
+                            <ul>
+                                I have read and agreed to the Terms of Service and
+                            </ul>
+                            <ul>
+                                privacy policy
+                            </ul>
+                        </div>
+                    </ul>
+                    <ul>
+                        <button type="submit">Creat Account</button>
+                    </ul>
+                    <center>
+                        <ul class="or">or</ul>
+                    </center>
+                    <ul>
+                        <div class="signup">
+                            <a href="">
+                                <div class="google"><img src="Assets/google icon.png" alt="google icon">Signup with Google
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="facevook"><img src="Assets/facebook icon.png" alt="facebook icon">signup with
+                                    facebook</div>
+                            </a>
+                        </div>
+                    </ul><center>
+                    <ul class="login" ><h3>Already have an account? <a href="">log in</a></h3></ul>
+                </center>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        function validateForm() {
+            var password = document.getElementById("password").value;
+            var confirmPassword = document.getElementById("confirmPassword").value;
+
+            // Check if passwords match
+            if (password !== confirmPassword) {
+                alert("Passwords do not match.");
+                return false;
+            }
+            return true;
+        }
+    </script>
+
+</body>
+
+</html>
